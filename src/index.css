@@ -10,4 +10,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  padding: 3px 10px;
+  font-weight: bolder;
+}
+
+pre {
+  padding: 20px 5px;
+  background-color: #c1d8f0;
+  border: 2px solid #063970;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'RocknRoll One', sans-serif;
 }

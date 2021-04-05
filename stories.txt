@@ -1,0 +1,50 @@
+
+id="editor" > textarea
+id="preview" > element
+
+Event:
+	When I enter text into the #editor, the text is rendered  as HTML in the preview element.
+	Upon first load, the editor must have default value which contains a valid markdown that represents at least one of the ff elements:
+		-Header (h1 size)
+		-Sub header (h2)
+		-link
+		-inline code
+		-code block
+		-list item
+		-blockquote
+		-image
+		-bolded text
+	Also, the default markdown must be rendered:
+
+
+CSS Structure:
+	1.) Define the global/config properties:
+		title font
+		raw font
+		view font
+		primary color
+		secondary color
+		accent color
+
+		as well as the resets:
+			margin, padding, and box-sizing
+	2.) Component based styling
+
+
+
+Components Structure:
+	Parent: MD Previewer Component
+		Child1: Editor Component
+			Child1: Header
+			Child2: Editor
+		Child2: Preview Component
+			Child1: Header
+			Child2: Previewer
+
+File Structure:
+	App + App Styling File + Components Folder
+		Components Folder:
+			Editor Component Folder:
+				Editor Component + Editor Styling File
+			Previewer Component Folder:
+				Previewer Component + Previewer Styling File
